@@ -14,6 +14,10 @@
 		04AF55E0269851BB00962006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AF55DE269851BB00962006 /* Main.storyboard */; };
 		04AF55EC269851BB00962006 /* CommandRunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF55EB269851BB00962006 /* CommandRunnerTests.swift */; };
 		04AF55F7269851BC00962006 /* CommandRunnerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF55F6269851BC00962006 /* CommandRunnerUITests.swift */; };
+		04AF560B26985C1900962006 /* ProgressIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF560A26985C1900962006 /* ProgressIndicator.swift */; };
+		04AF562126988B0100962006 /* RowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF562026988B0100962006 /* RowItem.swift */; };
+		04AF562926988C6300962006 /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF562826988C6300962006 /* Script.swift */; };
+		04AF562E26989DA500962006 /* Runner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AF562D26989DA500962006 /* Runner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		04AF55F2269851BC00962006 /* CommandRunnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommandRunnerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AF55F6269851BC00962006 /* CommandRunnerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandRunnerUITests.swift; sourceTree = "<group>"; };
 		04AF55F8269851BC00962006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04AF560A26985C1900962006 /* ProgressIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicator.swift; sourceTree = "<group>"; };
+		04AF562026988B0100962006 /* RowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowItem.swift; sourceTree = "<group>"; };
+		04AF562826988C6300962006 /* Script.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Script.swift; sourceTree = "<group>"; };
+		04AF562D26989DA500962006 /* Runner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +108,15 @@
 			children = (
 				04AF55D5269851BA00962006 /* AppDelegate.swift */,
 				04AF55D7269851BA00962006 /* ContentView.swift */,
+				04AF560A26985C1900962006 /* ProgressIndicator.swift */,
+				04AF562026988B0100962006 /* RowItem.swift */,
 				04AF55D9269851BB00962006 /* Assets.xcassets */,
 				04AF55DE269851BB00962006 /* Main.storyboard */,
 				04AF55E1269851BB00962006 /* Info.plist */,
 				04AF55E2269851BB00962006 /* CommandRunner.entitlements */,
 				04AF55DB269851BB00962006 /* Preview Content */,
+				04AF562826988C6300962006 /* Script.swift */,
+				04AF562D26989DA500962006 /* Runner.swift */,
 			);
 			path = CommandRunner;
 			sourceTree = "<group>";
@@ -266,7 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AF55D8269851BA00962006 /* ContentView.swift in Sources */,
+				04AF560B26985C1900962006 /* ProgressIndicator.swift in Sources */,
 				04AF55D6269851BA00962006 /* AppDelegate.swift in Sources */,
+				04AF562E26989DA500962006 /* Runner.swift in Sources */,
+				04AF562926988C6300962006 /* Script.swift in Sources */,
+				04AF562126988B0100962006 /* RowItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,7 +461,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuichiro.app.CommandRunner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -469,7 +485,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuichiro.app.CommandRunner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
